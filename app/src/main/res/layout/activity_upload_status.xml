@@ -32,7 +32,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp">
+                    android:layout_margin="0dp">
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -42,25 +42,29 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="饮食        "
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:background="@drawable/setbar_bg"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="休闲活动"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:background="@drawable/setbar_bg"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="睡眠        "
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:background="@drawable/setbar_bg"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="健康        "
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:background="@drawable/setbar_bg"/>
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
