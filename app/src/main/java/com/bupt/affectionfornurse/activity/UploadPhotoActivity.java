@@ -53,7 +53,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
                     Intent getImageByCamera=new Intent("android.media.action.IMAGE_CAPTURE");
                     startActivityForResult(getImageByCamera,REQUEST_CODE_CAPTURE_CAMEIA);
                 }else{
-                    Toast.makeText(getApplicationContext(),"请确认已经插入SD卡",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"请确认已经插入SD卡",Toast.LENGTH_LONG).show();
                 }
             }
         });
