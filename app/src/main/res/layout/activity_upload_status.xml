@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="老人状态">
+    tools:context="com.bupt.affectionfornurse.activity.UploadStatusActivity">
     <RelativeLayout style="@style/rl_common_titleBar"
         android:id="@+id/rl_title">
 

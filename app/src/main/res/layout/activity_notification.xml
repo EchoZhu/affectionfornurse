@@ -9,4 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bupt.affectionfornurse.activity.NotificationActivity">
 
+    <RelativeLayout style="@style/rl_common_titleBar"
+        android:id="@+id/rl_title">
+
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            style="@style/iv_common_back" />
+
+        <TextView
+            style="@style/tv_common_titleBar_title"
+            android:text="新消息" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/new_message"
+        android:layout_below="@+id/rl_title"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
 </RelativeLayout>
