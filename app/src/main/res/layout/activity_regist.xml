@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.bupt.affectionfornurse.activity.RegistActivity">
+    <RelativeLayout style="@style/rl_common_titleBar">
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            style="@style/iv_common_back" />
+
+        <TextView
+            style="@style/tv_common_titleBar_title"
+            android:text="@string/action_register_short" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            >
+
+            <android.support.design.widget.TextInputLayout style="@style/et_common">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_username_regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/et_common">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/et_common">
+
+                <EditText
+                    android:id="@+id/password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password_again"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_regist"
+                android:text="@string/action_register_short"
+                style="@style/btn_common_blue"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

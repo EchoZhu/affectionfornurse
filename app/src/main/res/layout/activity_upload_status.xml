@@ -1,12 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.bupt.affectionfornurse.activity.UploadStatusActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/rl_common_titleBar">
+
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            style="@style/iv_common_back" />
+
+        <TextView
+            style="@style/tv_common_titleBar_title"
+            android:text="@string/title_activity_upload" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meal"
+                style="@style/leftlinearlayouttextstyle"
+                android:background="@color/back_1"
+                android:text="饮食" />
+
+            <TextView
+                android:id="@+id/entertainment"
+                style="@style/leftlinearlayouttextstyle"
+                android:background="@color/back_2"
+                android:text="休闲活动" />
+
+            <TextView
+                android:id="@+id/sleep"
+                style="@style/leftlinearlayouttextstyle"
+                android:background="@color/back_3"
+                android:text="睡眠" />
+
+            <TextView
+                android:id="@+id/health"
+                style="@style/leftlinearlayouttextstyle"
+                android:background="@color/back_4"
+                android:text="健康" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/food_1"
+                    style="@style/tv_roll_style"
+                    android:text="鲜豆浆" />
+
+                <TextView
+                    android:id="@+id/food_2"
+                    style="@style/tv_roll_style"
+                    android:layout_toRightOf="@+id/food_1"
+                    android:text="牛奶" />
+
+                <TextView
+                    android:id="@+id/food_3"
+                    style="@style/tv_roll_style"
+                    android:layout_toRightOf="@+id/food_2"
+                    android:text="南瓜粥" />
+
+                <TextView
+                    android:id="@+id/food_4"
+                    style="@style/tv_roll_style"
+                    android:layout_below="@+id/food_2"
+                    android:text="豆沙包" />
+
+                <TextView
+                    android:id="@+id/food_5"
+                    style="@style/tv_roll_style"
+                    android:layout_below="@+id/food_2"
+                    android:layout_toRightOf="@+id/food_4"
+                    android:text="小米稀饭" />
+
+                <TextView
+                    android:id="@+id/food_6"
+                    style="@style/tv_roll_style"
+                    android:layout_below="@+id/food_3"
+                    android:layout_toRightOf="@+id/food_5"
+                    android:text="混沌" />
+
+                <ImageView
+                    android:id="@+id/iv_updatefood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/updatefood" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue_dark" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/fun_1"
+                    style="@style/tv_roll_style"
+                    android:text="散步"/>
+
+                <TextView
+                    android:id="@+id/fun_2"
+                    style="@style/tv_roll_style"
+                    android:layout_toRightOf="@+id/fun_1"
+                    android:text="打太极"
+                      />
+
+                <TextView
+                    android:id="@+id/fun_3"
+                    style="@style/tv_roll_style"
+                    android:layout_toRightOf="@+id/fun_2"
+                    android:text="棋牌"
+                    />
+
+                <TextView
+                    android:id="@+id/fun_4"
+                    style="@style/tv_roll_style"
+                    android:layout_below="@+id/fun_2"
+                    android:text="戏曲"
+                     />
+
+                <TextView
+                    android:id="@+id/fun_5"
+                    style="@style/tv_roll_style"
+                    android:layout_toRightOf="@+id/fun_4"
+                    android:layout_below="@+id/fun_2"
+                    android:text="看电视"
+                      />
+
+                <TextView
+                    android:id="@+id/fun_6"
+
+                    android:layout_below="@+id/fun_3"
+
+                    android:layout_toRightOf="@+id/fun_5"
+                    style="@style/tv_roll_style"
+                    android:text="读报"/>
+
+                <ImageView
+                    android:id="@+id/iv_updatefun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/updatefood" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue_dark" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/sleep_1"
+                    style="@style/tv_roll_style"
+                    android:text="睡眠良好" />
+
+                <TextView
+                    android:id="@+id/sleep_2"
+                    android:layout_toRightOf="@+id/sleep_1"
+                    style="@style/tv_roll_style"
+                    android:text="略有瞌睡" />
+
+
+                <TextView
+                    android:id="@+id/sleep_3"
+
+                    android:layout_below="@+id/sleep_2"
+                    style="@style/tv_roll_style"
+                    android:text="时长正常" />
+
+                <TextView
+                    android:id="@+id/sleep_4"
+
+                    android:layout_below="@+id/sleep_2"
+
+                    android:layout_toRightOf="@+id/sleep_3"
+                    style="@style/tv_roll_style"
+                    android:text="时长过短" />
+
+                <ImageView
+                    android:id="@+id/iv_updatesleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/updatefood" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue_dark" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/fit_1"
+                    style="@style/tv_roll_style"
+                    android:text="优秀" />
+
+                <TextView
+                    android:id="@+id/fit_2"
+
+                    android:layout_toRightOf="@+id/fit_1"
+                    style="@style/tv_roll_style"
+                    android:text="良好" />
+
+                <TextView
+                    android:id="@+id/fit_3"
+
+                    android:layout_toRightOf="@+id/fit_2"
+                    style="@style/tv_roll_style"
+                    android:text="差" />
+
+                <ImageView
+                    android:id="@+id/iv_updatefit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/updatefood" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

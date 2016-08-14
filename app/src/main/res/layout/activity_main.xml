@@ -3,10 +3,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.bupt.affectionfornurse.activity.MainActivity">
 
+    <RelativeLayout style="@style/rl_common_titleBar">
+
+        <TextView
+            style="@style/tv_common_titleBar_title"
+            android:text="@string/app_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_uploadpic"
+        android:layout_above="@+id/rl_uploadstatus"
+        android:layout_marginBottom="40dp"
+        style="@style/rl_bg_mainlayout">
+
+        <ImageView
+            android:id="@+id/imageexp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/imageexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="上传图片"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/imdetail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/image"
+            android:layout_toRightOf="@id/imageexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="请上传老人的图片"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/botton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/image"
+            android:src="@mipmap/arrow_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_uploadstatus"
+        style="@style/rl_bg_mainlayout"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/stateexp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_menu_send" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/stateexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="上传状态"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/stdetail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/state"
+            android:layout_toRightOf="@id/stateexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="请上传老人的饮食、活动以及睡眠状态"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/botton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/state"
+            android:src="@mipmap/arrow_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        style="@style/rl_bg_mainlayout"
+        android:layout_below="@+id/rl_uploadstatus"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/notexp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sym_action_email" />
+
+        <TextView
+            android:id="@+id/not"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/notexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="通知"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/notdetail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/not"
+            android:layout_toRightOf="@id/notexp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="请阅读通知内容"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/botton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/not"
+            android:src="@mipmap/arrow_right" />
+
+    </RelativeLayout>
 </RelativeLayout>
